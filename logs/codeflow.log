@@ -190,3 +190,34 @@ TypeError: TestTypingEngine.test_inspection_scroll_stops_typing.<locals>.mock_sc
 2026-10-28 16:17:01 [WARNING] [CodeFlowStudio:engine] Target window lost focus during automation.
 2026-10-28 16:17:13 [WARNING] [CodeFlowStudio:engine] Target window lost focus during automation.
 2026-10-28 16:17:14 [INFO] [CodeFlowStudio:engine] Typing engine cancelled by stop signal.
+2026-10-28 16:22:45 [INFO] [CodeFlowStudio:engine] Typing session completed: 51 characters typed.
+2026-10-28 16:22:46 [INFO] [CodeFlowStudio:engine] Typing engine cancelled by stop signal.
+2026-10-28 16:22:47 [INFO] [CodeFlowStudio:engine] Typing session completed: 10 characters typed.
+2026-10-28 16:22:47 [INFO] [CodeFlowStudio:engine] Typing session completed: 5 characters typed.
+2026-10-28 16:22:52 [INFO] [CodeFlowStudio:engine] Typing session completed: 90 characters typed.
+2026-10-28 16:22:52 [INFO] [CodeFlowStudio:mouse_controller] User manual mouse activity detected (drift=565.7px). Cancelling motion.
+2026-10-28 16:27:50 [INFO] [CodeFlowStudio:engine] Typing session completed: 51 characters typed.
+2026-10-28 16:27:50 [INFO] [CodeFlowStudio:engine] Typing engine cancelled by stop signal.
+2026-10-28 16:27:51 [INFO] [CodeFlowStudio:engine] Typing session completed: 10 characters typed.
+2026-10-28 16:27:52 [INFO] [CodeFlowStudio:engine] Typing session completed: 5 characters typed.
+2026-10-28 16:27:55 [INFO] [CodeFlowStudio:engine] Typing session completed: 90 characters typed.
+2026-10-28 16:27:55 [INFO] [CodeFlowStudio:mouse_controller] User manual mouse activity detected (drift=565.7px). Cancelling motion.
+2026-10-28 16:28:50 [INFO] [CodeFlowStudio:engine] Typing session completed: 51 characters typed.
+2026-10-28 16:28:50 [INFO] [CodeFlowStudio:engine] Typing engine cancelled by stop signal.
+2026-10-28 16:28:51 [INFO] [CodeFlowStudio:engine] Typing session completed: 10 characters typed.
+2026-10-28 16:28:52 [INFO] [CodeFlowStudio:engine] Typing session completed: 5 characters typed.
+2026-10-28 16:28:56 [INFO] [CodeFlowStudio:engine] Typing session completed: 90 characters typed.
+2026-10-28 16:28:56 [INFO] [CodeFlowStudio:mouse_controller] User manual mouse activity detected (drift=565.7px). Cancelling motion.
+2026-10-28 16:30:12 [INFO] [CodeFlowStudio:app] Starting CodeFlow Studio...
+2026-10-28 16:31:13 [INFO] [CodeFlowStudio:app] Starting CodeFlow Studio...
+2026-10-28 16:31:17 [INFO] [CodeFlowStudio:engine] Beginning countdown: 3.0s
+2026-10-28 16:31:21 [WARNING] [CodeFlowStudio:engine] Target window lost focus during automation.
+2026-10-28 16:31:24 [INFO] [CodeFlowStudio:engine] Typing engine cancelled by stop signal.
+2026-10-28 16:31:33 [INFO] [CodeFlowStudio:engine] Beginning countdown: 3.0s
+2026-10-28 16:31:36 [WARNING] [CodeFlowStudio:engine] Target window lost focus during automation.
+2026-10-28 16:31:38 [WARNING] [CodeFlowStudio:engine] Target window lost focus during automation.
+2026-10-28 16:31:41 [INFO] [CodeFlowStudio:emergency_stop] Emergency stop triggered.
+2026-10-28 16:31:41 [INFO] [CodeFlowStudio:engine] Typing engine cancelled by stop signal.
+2026-10-28 16:31:54 [INFO] [CodeFlowStudio:engine] Beginning countdown: 3.0s
+2026-10-28 16:31:59 [WARNING] [CodeFlowStudio:engine] Target window lost focus during automation.
+2026-10-28 16:32:01 [INFO] [CodeFlowStudio:engine] Typing engine cancelled by stop signal.

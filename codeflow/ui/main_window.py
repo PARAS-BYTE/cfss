@@ -117,11 +117,14 @@ class CodeFlowMainWindow(QMainWindow):
 
         # Settings Sidebar
         self.settings_panel = SettingsPanel(self.window_detector, self)
-        self.settings_panel.setFixedWidth(360)
+        self.settings_panel.setMinimumWidth(390)
         splitter.addWidget(self.settings_panel)
 
         splitter.setStretchFactor(0, 1)
         splitter.setStretchFactor(1, 0)
+        splitter.setSizes([680, 420])
+        splitter.setCollapsible(0, False)
+        splitter.setCollapsible(1, False)
         main_layout.addWidget(splitter, stretch=1)
 
         # Bottom Status Panel
@@ -217,12 +220,12 @@ class CodeFlowMainWindow(QMainWindow):
         # Tools Menu
         tools_menu = menubar.addMenu("&Tools")
 
-        verify_act = QAction("🔍 &Verify Result in Comparator...", self)
+        verify_act = QAction("&Verify Result in Comparator...", self)
         verify_act.setShortcut("Ctrl+T")
         verify_act.triggered.connect(self._open_comparator)
         tools_menu.addAction(verify_act)
 
-        refresh_win_act = QAction("↻ &Refresh Window List", self)
+        refresh_win_act = QAction("&Refresh Window List", self)
         refresh_win_act.triggered.connect(self.settings_panel.refresh_windows)
         tools_menu.addAction(refresh_win_act)
 

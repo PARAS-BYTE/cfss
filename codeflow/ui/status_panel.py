@@ -79,23 +79,20 @@ class StatusPanel(QWidget):
         # 2.5 Live HUD Action Feed (Displays exact current microsecond state)
         self.live_hud_frame = QFrame()
         self.live_hud_frame.setObjectName("liveHudCard")
-        self.live_hud_frame.setStyleSheet(
-            "background: #161b22; border: 1px solid #30363d; border-radius: 4px; padding: 4px 10px;"
-        )
         hud_layout = QHBoxLayout(self.live_hud_frame)
-        hud_layout.setContentsMargins(6, 4, 6, 4)
+        hud_layout.setContentsMargins(10, 6, 10, 6)
 
         self.live_hud_icon = QLabel("[STATUS]")
         self.live_hud_icon.setObjectName("liveHudStatusTag")
         hud_layout.addWidget(self.live_hud_icon)
 
         self.live_action_label = QLabel("System Ready: Click START AUTOMATION [F5] to begin.")
-        self.live_action_label.setStyleSheet("color: #58a6ff; font-weight: 600; font-size: 12px;")
+        self.live_action_label.setStyleSheet("color: #38bdf8; font-weight: 600; font-size: 12px;")
         hud_layout.addWidget(self.live_action_label, stretch=1)
 
         self.input_method_pill = QLabel("INPUT: SHIFT+KEY PHYSICAL")
         self.input_method_pill.setStyleSheet(
-            "color: #79c0ff; font-size: 11px; font-weight: 600; padding: 3px 8px; background: #0d1117; border: 1px solid #30363d; border-radius: 4px;"
+            "color: #7dd3fc; font-size: 11px; font-weight: 700; padding: 4px 10px; background: #0d131f; border: 1px solid #1e293b; border-radius: 4px;"
         )
         hud_layout.addWidget(self.input_method_pill)
 
@@ -110,31 +107,31 @@ class StatusPanel(QWidget):
         metrics_row.addWidget(self.target_badge)
 
         self.target_title_label = QLabel("TARGET: ANY WINDOW")
-        self.target_title_label.setStyleSheet("color: #58a6ff; font-weight: 600;")
+        self.target_title_label.setStyleSheet("color: #38bdf8; font-weight: 700; font-size: 11px;")
         metrics_row.addWidget(self.target_title_label, stretch=1)
 
         # Live WPM Speedometer Pill
         self.wpm_pill = QLabel("SPEED: 40 WPM (200 CPM)")
         self.wpm_pill.setStyleSheet(
-            "color: #79c0ff; font-weight: 600; font-size: 11px; padding: 3px 8px; background-color: #0d1117; border: 1px solid #30363d; border-radius: 4px;"
+            "color: #7dd3fc; font-weight: 700; font-size: 11px; padding: 4px 10px; background-color: #0d131f; border: 1px solid #1e293b; border-radius: 4px;"
         )
         metrics_row.addWidget(self.wpm_pill)
 
         # Cadence / Typo pill badge
         self.cadence_pill = QLabel("CADENCE: 30-45 WPM WAVY")
         self.cadence_pill.setStyleSheet(
-            "color: #d2a8ff; font-weight: 600; font-size: 11px; padding: 3px 8px; background-color: #0d1117; border: 1px solid #30363d; border-radius: 4px;"
+            "color: #c084fc; font-weight: 700; font-size: 11px; padding: 4px 10px; background-color: #0d131f; border: 1px solid #1e293b; border-radius: 4px;"
         )
         metrics_row.addWidget(self.cadence_pill)
 
         # Countdown display
         self.countdown_label = QLabel("")
-        self.countdown_label.setStyleSheet("color: #e3b341; font-weight: bold; font-size: 13px;")
+        self.countdown_label.setStyleSheet("color: #fbbf24; font-weight: 800; font-size: 12px;")
         metrics_row.addWidget(self.countdown_label)
 
         # Time labels
-        self.time_label = QLabel("Elapsed: 00:00 | ETA: --:--")
-        self.time_label.setStyleSheet("color: #8b949e; font-weight: 500;")
+        self.time_label = QLabel("Elapsed: 00:00 • ETA: --:--")
+        self.time_label.setStyleSheet("color: #94a3b8; font-weight: 600; font-size: 11px;")
         metrics_row.addWidget(self.time_label)
 
         layout.addLayout(metrics_row)
